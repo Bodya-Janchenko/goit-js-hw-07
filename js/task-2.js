@@ -26,6 +26,8 @@ const images = [
 ];
 
 const ulEl = document.querySelector(".gallery");
-ulEl.innerHTML = images.map(
-  (images) => `<li><img src=${images.url} alt=${images.alt} width="100"></li>`
-);
+ulEl.innerHTML = images
+  .map(
+    (images) => `<li><img src=${images.url} alt=${images.alt} width="100"></li>`
+  )
+  .join("");
